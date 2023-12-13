@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "compute"
+version = "0.1.0"
+description = ""
+authors = ["Romain Cambonie <romain.cambonie@gmail.com>"]
+readme = "README.md"
+
+[tool.black]
+line-length = 128
+
+
+[tool.poetry.dependencies]
+python = "3.10.12"
+jupyter = "^1.0.0"
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.0.292"
+black = "^23.9.1"
+
+[tool.poetry.scripts]
+start = "main:main"
+
+[tool.ruff]
+line-length = 128
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
